@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
+    <name>Sisow Beflius Direct NET</name>
+    <creationDate>January 05 2015</creationDate>
+    <author>Sisow</author>
+    <authorUrl>https://www.sisow.nl</authorUrl>
+    <copyright>Copyright (C) 2015 Sisow. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>5.4.1</version>
+    <description>Accept Beflius Direct NET with Sisow in your store</description>
+    <files>
+        <filename plugin="sisow_belfius">sisow_belfius.php</filename>
+        <filename plugin="sisow_belfius">belfius.png</filename>
+        <folder>language</folder>
+    </files>
+    <vmconfig>
+        <fields name="params">
+            <fieldset name="basic">
+                <field class="level1" type="vmtitle" default="VMPAYMENT_SISOW_BELFIUS_BASIC_PARAMS"/>
+				<field class="api live required" name="sisow_merchantid" type="text" size="80" default=""
+                       label="VMPAYMENT_SISOW_BELFIUS_MERCHANTID"/>
+                <field class="api live required" name="sisow_merchantkey" type="text" size="80" default=""
+                       label="VMPAYMENT_SISOW_BELFIUS_MERCHANTKEY"/>
+			   <field class="api live" name="sisow_shopid" type="text" size="80" default=""
+                       label="VMPAYMENT_SISOW_BELFIUS_MERCHANTSHOPID"/>
+					   
+				<field class="" name="sisow_testmode" type="radio" default="1" label="VMPAYMENT_SISOW_BELFIUS_TESTMODE"
+                       description="VMPAYMENT_SISOW_BELFIUS_TESTMODE_DESC">
+                    <option value="0">VMPAYMENT_SISOW_BELFIUS_TESTMODE_LIVE</option>
+                    <option value="1">VMPAYMENT_SISOW_BELFIUS_TESTMODE_TEST</option>
+                </field>
+					  
+                <!-- Sisow settings -->
+                <field type="vmtitle" default="VMPAYMENT_SISOW_BELFIUS_SETTINGS" description="VMPAYMENT_SISOW_BELFIUS_SETTINGS_DESC"/>
+                <field class="api live" name="sisow_description" type="text" size="80" default=""
+                       label="VMPAYMENT_SISOW_BELFIUS_DESCRIPTION" description="VMPAYMENT_SISOW_BELFIUS_DESCRIPTION"/>
+                       <field name="sisow_payment_logos" class="payment_logo" default="0" type="list"
+                            label="VMPAYMENT_SISOW_BELFIUS_LOGO" description="VMPAYMENT_SISOW_BELFIUS_LOGO_DESC">
+                     <option value="0">COM_VIRTUEMART_NO</option>
+                     <option value="1">COM_VIRTUEMART_YES</option>
+                     </field>
+				<field name="status_pending" type="vmorderstate" scope="com_virtuemart" default="U"                    
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSPENDING" description="VMPAYMENT_SISOW_BELFIUS_STATUSPENDING_DESC"/>
+			    <field name="status_success" type="vmorderstate" scope="com_virtuemart" default="U"
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSSUCCESS" description="VMPAYMENT_SISOW_BELFIUS_STATUSSUCCESS_DESC"/>
+				<field name="status_cancelled" type="vmorderstate" scope="com_virtuemart" default="U"
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSCANCELLED" description="VMPAYMENT_SISOW_BELFIUS_STATUSCANCELLED_DESC"/>
+				<field name="status_expired" type="vmorderstate" scope="com_virtuemart" default="U"
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSEXPIRED" description="VMPAYMENT_SISOW_BELFIUS_STATUSEXPIRED_DESC"/>
+				<field name="status_failure" type="vmorderstate" scope="com_virtuemart" default="U"
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSFAILURE" description="VMPAYMENT_SISOW_BELFIUS_STATUSFAILURE_DESC"/>
+				<field name="status_reversed" type="vmorderstate" scope="com_virtuemart" default="U"
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSREVERSED" description="VMPAYMENT_SISOW_BELFIUS_STATUSREVERSED_DESC"/>
+				<field name="status_refund" type="vmorderstate" scope="com_virtuemart" default="U"
+                       label="VMPAYMENT_SISOW_BELFIUS_STATUSREFUND" description="VMPAYMENT_SISOW_BELFIUS_STATUSREFUND_DESC"/>
+				
+				<field type="vmtitle" default="VMPAYMENT_SISOW_BELFIUS_RESTRICTIONS"
+                       description="VMPAYMENT_SISOW_BELFIUS_RESTRICTIONS_DESC"/>
+				<field name="countries" multiple="true" type="vmcountries" scope="com_virtuemart" default=""
+                       label="VMPAYMENT_SISOW_BELFIUS_COUNTRIES" description="VMPAYMENT_SISOW_BELFIUS_COUNTRIES_DESC"/>
+                <field name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_SISOW_BELFIUS_CURRENCY"
+                       description="VMPAYMENT_SISOW_BELFIUS_CURRENCY_DESC"/>	  
+				<field name="min_amount" type="text" label="VMPAYMENT_SISOW_BELFIUS_MIN_AMOUNT"
+                       description="VMPAYMENT_SISOW_BELFIUS_MIN_AMOUNT_DESC"/>
+                <field name="max_amount" type="text" label="VMPAYMENT_SISOW_BELFIUS_MAX_AMOUNT"
+                       description="VMPAYMENT_SISOW_BELFIUS_MAX_AMOUNT_DESC"/>
+                <field name="cost_per_transaction" type="text" label="VMPAYMENT_SISOW_BELFIUS_COST_PER_TRANSACTION"
+                       description="VMPAYMENT_SISOW_BELFIUS_COST_PER_TRANSACTION_DESC"/>
+                <field name="cost_percent_total" type="text" label="VMPAYMENT_SISOW_BELFIUS_COST_PERCENT_TOTAL"
+                       description="VMPAYMENT_SISOW_BELFIUS_COST_PERCENT_TOTAL_DESC"/>
+                <field name="tax_id" type="vmtaxes" scope="com_virtuemart" label="VMPAYMENT_SISOW_BELFIUS_TAX"
+                       description="VMPAYMENT_SISOW_BELFIUS_TAX_DESC"/>
+			</fieldset>
+        </fields>
+    </vmconfig>
+</extension>

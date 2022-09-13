@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="library" group="sisow" method="upgrade">
+    <name>Sisow Library</name>
+	<libraryname>sisow</libraryname>
+    <creationDate>January 05 2015</creationDate>
+    <author>Sisow</author>
+    <authorUrl>https://www.sisow.nl</authorUrl>
+    <copyright>Copyright (C) 2015 Sisow. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>3.0.4</version>
+    <description>The Sisow library which is used by the payment methods</description>
+    <files>
+        <filename>base.php</filename>
+		<filename>sisowcls5.php</filename>
+    </files>
+</extension>

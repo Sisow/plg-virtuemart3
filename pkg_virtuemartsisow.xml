@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><extension type="package" version="1.6" method="upgrade">
+	<name>sisow_ Virtuemart Payment Methods</name>
+	<author>sisow</author>
+	<creationDate>October 2020</creationDate>
+	<packagename>virtuemartsisow</packagename>
+	<version>5.4.3</version>
+	<url>https://sisow.nl</url>
+	<packager>sisow_</packager>
+	<packagerurl>https://sisow.nl</packagerurl>
+	<description>Install all the Sisow payment methods for Virtuemart at once</description>
+	<files folder="packages">
+		<file type="library" id="sisow">sisow.zip</file>
+		<file type="plugin" id="sisow_afterpay" group="vmpayment">sisow_afterpay.zip</file>
+		<file type="plugin" id="sisow_mistercash" group="vmpayment">sisow_mistercash.zip</file>
+		<file type="plugin" id="sisow_belfius" group="vmpayment">sisow_belfius.zip</file>
+		<file type="plugin" id="sisow_bunq" group="vmpayment">sisow_bunq.zip</file>
+		<file type="plugin" id="sisow_capayable" group="vmpayment">sisow_capayable.zip</file>
+		<file type="plugin" id="sisow_mastercard" group="vmpayment">sisow_mastercard.zip</file>
+		<file type="plugin" id="sisow_eps" group="vmpayment">sisow_eps.zip</file>
+		<file type="plugin" id="sisow_focum" group="vmpayment">sisow_focum.zip</file>
+		<file type="plugin" id="sisow_giropay" group="vmpayment">sisow_giropay.zip</file>
+		<file type="plugin" id="sisow_homepay" group="vmpayment">sisow_homepay.zip</file>
+		<file type="plugin" id="sisow_ideal" group="vmpayment">sisow_ideal.zip</file>
+		<file type="plugin" id="sisow_maestro" group="vmpayment">sisow_maestro.zip</file>
+		<file type="plugin" id="sisow_overboeking" group="vmpayment">sisow_overboeking.zip</file>
+		<file type="plugin" id="sisow_paypalec" group="vmpayment">sisow_paypalec.zip</file>
+		<file type="plugin" id="sisow_sofort" group="vmpayment">sisow_sofort.zip</file>
+		<file type="plugin" id="sisow_vvvgiftcard" group="vmpayment">sisow_vvvgiftcard.zip</file>
+		<file type="plugin" id="sisow_webshopgiftcard" group="vmpayment">sisow_webshopgiftcard.zip</file>
+		<file type="plugin" id="sisow_idealqr" group="vmpayment">sisow_idealqr.zip</file>
+		<file type="plugin" id="sisow_vpay" group="vmpayment">sisow_vpay.zip</file>
+		<file type="plugin" id="sisow_cbc" group="vmpayment">sisow_cbc.zip</file>
+		<file type="plugin" id="sisow_kbc" group="vmpayment">sisow_kbc.zip</file>
+		<file type="plugin" id="sisow_billink" group="vmpayment">sisow_billink.zip</file>
+		<file type="plugin" id="sisow_ebill" group="vmpayment">sisow_ebill.zip</file>
+		<file type="plugin" id="sisow_visa" group="vmpayment">sisow_visa.zip</file>
+		<file type="plugin" id="sisow_spraypay" group="vmpayment">sisow_spraypay.zip</file>
+	</files>
+ </extension>
