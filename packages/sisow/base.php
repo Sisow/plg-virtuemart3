@@ -114,6 +114,13 @@ class SisowBase extends vmPSPlugin {
 
 		$arg = array();
 		$arg['ipaddress'] = $_SERVER['REMOTE_ADDR'];
+		//Software Headers
+		$arg['PlatformName'] = 'VirtueMart';
+		$arg['PlatformVersion'] = RELEASE;
+		$arg['ModuleSupplier'] = 'Buckaroo B.V.';
+		$arg['ModuleName'] = 'Buckaroo (former Sisow) VirtueMart';
+		$arg['ModuleVersion'] = '5.4.1';
+
 		$arg['testmode'] = $method->sisow_testmode == '1' ? 'true' : 'false';
 		$arg['shipping_firstname'] = !empty($order['details']['ST']->first_name) ? $order['details']['ST']->first_name : $order['details']['BT']->first_name;
 		$arg['shipping_lastname'] = !empty($order['details']['ST']->last_name) ? $order['details']['ST']->last_name : $order['details']['BT']->last_name;
