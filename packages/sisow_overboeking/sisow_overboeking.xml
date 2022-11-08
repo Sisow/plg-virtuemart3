@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
-    <name>Sisow Overboeking</name>
-    <creationDate>January 05 2015</creationDate>
-    <author>Sisow</author>
-    <authorUrl>https://www.sisow.nl</authorUrl>
-    <copyright>Copyright (C) 2015 Sisow. All rights reserved.</copyright>
+    <name>Buckaroo (former Sisow) Overboeking</name>
+    <creationDate>September 12 2022</creationDate>
+    <author>Buckaroo</author>
+    <authorUrl>https://www.buckaroo.nl</authorUrl>
+    <copyright>Copyright (C) 2022 Buckaroo B.V. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <version>5.4.1</version>
-    <description>Accept Overboeking with Sisow in your store</description>
+    <description>Accept Overboeking with Buckaroo (former Sisow) in your store</description>
     <files>
         <filename plugin="sisow_overboeking">sisow_overboeking.php</filename>
         <filename plugin="sisow_overboeking">overboeking.png</filename>
@@ -30,7 +30,7 @@
                     <option value="1">VMPAYMENT_SISOW_OVERBOEKING_TESTMODE_TEST</option>
                 </field>
 					  
-                <!-- Sisow settings -->
+                <!-- Payment method settings -->
                 <field type="vmtitle" default="VMPAYMENT_SISOW_OVERBOEKING_SETTINGS" description="VMPAYMENT_SISOW_OVERBOEKING_SETTINGS_DESC"/>
                 <field class="api live" name="sisow_description" type="text" size="80" default=""
                        label="VMPAYMENT_SISOW_OVERBOEKING_DESCRIPTION" description="VMPAYMENT_SISOW_OVERBOEKING_DESCRIPTION"/>
@@ -54,7 +54,7 @@
 				<field name="status_refund" type="vmorderstate" scope="com_virtuemart" default="U"
                        label="VMPAYMENT_SISOW_OVERBOEKING_STATUSREFUND" description="VMPAYMENT_SISOW_OVERBOEKING_STATUSREFUND_DESC"/>
 				
-				<!-- Sisow settings -->				
+				<!-- Payment method settings -->				
 				<field type="vmtitle" default="VMPAYMENT_SISOW_OVERBOEKING_PAYMENTSETTINGS" description="VMPAYMENT_SISOW_OVERBOEKING_PAYMENTSETTINGS_DESC"/>
                 <field class="api live" name="sisow_days" type="text" size="80" default=""
                        label="VMPAYMENT_SISOW_OVERBOEKING_DAYS" description="VMPAYMENT_SISOW_OVERBOEKING_DAYS_DESC"/>

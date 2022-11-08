@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?><extension type="package" version="1.6" method="upgrade">
-	<name>sisow_ Virtuemart Payment Methods</name>
-	<author>sisow</author>
-	<creationDate>October 2020</creationDate>
-	<packagename>virtuemartsisow</packagename>
+	<name>Buckaroo VirtueMart 3 Payments (former Sisow)</name>
+	<author>buckaroo</author>
+	<creationDate>September 2022</creationDate>
+	<packagename>virtuemartbuckaroo</packagename>
 	<version>5.4.3</version>
-	<url>https://sisow.nl</url>
-	<packager>sisow_</packager>
-	<packagerurl>https://sisow.nl</packagerurl>
-	<description>Install all the Sisow payment methods for Virtuemart at once</description>
+	<url>https://www.buckaroo.nl/sisow</url>
+	<packager>Buckaroo B.V</packager>
+	<packagerurl>https://www.buckaroo.nl/sisow/sisow-plugin-page</packagerurl>
+	<description>Install all the Buckaroo (former Sisow) payment methods for Virtuemart at once</description>
 	<files folder="packages">
 		<file type="library" id="sisow">sisow.zip</file>
 		<file type="plugin" id="sisow_afterpay" group="vmpayment">sisow_afterpay.zip</file>

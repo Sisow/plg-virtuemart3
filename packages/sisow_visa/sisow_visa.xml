@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
-    <name>Sisow Visa</name>
-    <creationDate>January 05 2015</creationDate>
-    <author>Sisow</author>
-    <authorUrl>https://www.sisow.nl</authorUrl>
-    <copyright>Copyright (C) 2015 Sisow. All rights reserved.</copyright>
+    <name>Buckaroo (former Sisow) Visa</name>
+    <creationDate>September 12 2022</creationDate>
+    <author>Buckaroo</author>
+    <authorUrl>https://www.buckaroo.nl</authorUrl>
+    <copyright>Copyright (C) 2022 Buckaroo B.V. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <version>5.4.1</version>
-    <description>Accept Visa with Sisow in your store</description>
+    <description>Accept Visa with Buckaroo (former Sisow) in your store</description>
     <files>
         <filename plugin="sisow_visa">sisow_visa.php</filename>
         <filename plugin="sisow_visa">visa.png</filename>
@@ -30,7 +30,7 @@
                     <option value="1">VMPAYMENT_SISOW_VISA_TESTMODE_TEST</option>
                 </field>
 					  
-                <!-- Sisow settings -->
+                <!-- Payment method settings -->
                 <field type="vmtitle" default="VMPAYMENT_SISOW_VISA_SETTINGS" description="VMPAYMENT_SISOW_VISA_SETTINGS_DESC"/>
                 <field class="api live" name="sisow_description" type="text" size="80" default=""
                        label="VMPAYMENT_SISOW_VISA_DESCRIPTION" description="VMPAYMENT_SISOW_VISA_DESCRIPTION"/>
